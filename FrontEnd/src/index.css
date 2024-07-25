@@ -1,0 +1,30 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Change to your desired font family */
+  background-color: #A1BE95; /* A light teal color for a soothing background */
+  color: #333; /* Dark text color for better readability */
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Optional: Add styles for header */
+header {
+  background-color: #A1BE95; /* Darker teal for header background */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Optional: Add styles for footer */
+footer {
+  background-color: #A1BE95; /* Darker teal for footer background */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+/* src/App.css */
+
+/* Apply a cosmic or deep navy blue background color */
+body {
+  background-color: #001f3f; /* Dark navy blue */
+  color: #ffffff; /* White text color for contrast */
+  font-family: 'Roboto', sans-serif; /* Fallback to sans-serif if Roboto is unavailable */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Additional styles for the app */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Optional: If you want to apply specific styles to headers or other elements */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* White color for headers */
+}
+
+a {
+  color: #00bcd4; /* Teal color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
