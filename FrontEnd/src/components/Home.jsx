@@ -3,7 +3,8 @@ import { getAstrologers } from '../api';
 import { Link } from 'react-router-dom';
 import AstrologerCard from '../components/astrologercard';
 import Navbar from '../components/Navbar';
-import './Home.css'; // Add your CSS for styling
+//import './Home.css'; // Add your CSS for styling
+import '../pages/Home.css';
 
 const Home = () => {
     const [astrologers, setAstrologers] = useState([]);
@@ -22,7 +23,7 @@ const Home = () => {
 
     const fetchAstrologers = async () => {
         try {
-            const response = await getAstrologers(page, 5, filters.name, filters.expertise, filters.experience);
+            const response = await getAstrologers(page, 8, filters.name, filters.expertise, filters.experience);
             if (response.data && response.data.astrologers) {
                 setAstrologers(response.data.astrologers);
                 setPages(response.data.pages || 1); // Default to 1 if pages is undefined

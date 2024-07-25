@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { createAstrologer } from '../api';
 import { useNavigate } from 'react-router-dom';
-import './CreateAstrologer.css'; // Import your CSS file
+//import './CreateAstrologer.css'; // Import your CSS file
+import '../pages/CreateAstrologer.css'; // Import your CSS file
 
 const CreateAstrologer = () => {
     const [formData, setFormData] = useState({
