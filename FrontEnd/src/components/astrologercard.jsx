@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import './astrologercard.css';
 import '../pages/AstrologerCard.css';
 
 const AstrologerCard = ({ astrologer }) => {

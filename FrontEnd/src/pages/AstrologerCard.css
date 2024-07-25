@@ -1,25 +1,23 @@
-/* src/components/AstrologerCard.css */
-
 .astrologer-card {
-    border: 1px solid #b2dfdb; /* Light teal border */
+    border: 1px solid #b2dfdb; 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 15px;
     padding: 15px;
-    max-width: 300px; /* Adjusted max-width for better responsiveness */
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
-    background-color: #e0f2f1; /* Light teal background */
+    background-color: #e0f2f1; 
 }
 
 .astrologer-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-color: #4db6ac; /* Darker teal on hover */
+    border-color: #4db6ac; 
 }
 
 .astrologer-card-image {
@@ -34,10 +32,10 @@
 }
 
 .astrologer-card-name {
-    font-size: 1.25rem; /* Adjusted font size */
+    font-size: 1.25rem;
     margin: 0;
     font-weight: bold;
-    color: #004d40; /* Dark teal color for text */
+    color: #004d40; 
 }
 
 .astrologer-card-expertise,
@@ -46,8 +44,8 @@
 .astrologer-card-charges,
 .astrologer-card-language {
     margin: 5px 0;
-    font-size: 0.875rem; /* Adjusted font size */
-    color: #00796b; /* Slightly lighter teal for text */
+    font-size: 0.875rem; 
+    color: #00796b; 
 }
 
 @media (max-width: 768px) {
@@ -57,7 +55,7 @@
     }
 
     .astrologer-card-name {
-        font-size: 1rem; /* Smaller font size on smaller screens */
+        font-size: 1rem; 
     }
 
     .astrologer-card-expertise,
@@ -65,7 +63,7 @@
     .astrologer-card-rating,
     .astrologer-card-charges,
     .astrologer-card-language {
-        font-size: 0.75rem; /* Smaller font size on smaller screens */
+        font-size: 0.75rem; 
     }
 }
 

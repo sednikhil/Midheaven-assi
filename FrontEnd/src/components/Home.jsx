@@ -3,7 +3,6 @@ import { getAstrologers } from '../api';
 import { Link } from 'react-router-dom';
 import AstrologerCard from '../components/astrologercard';
 import Navbar from '../components/Navbar';
-//import './Home.css'; // Add your CSS for styling
 import '../pages/Home.css';
 
 const Home = () => {

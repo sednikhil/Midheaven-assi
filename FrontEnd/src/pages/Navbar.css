@@ -1,11 +1,9 @@
-/* src/components/Navbar.css */
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #F98866; /* Light orange background */
+    background-color: #F98866; 
     color: white;
 }
 
@@ -36,12 +34,12 @@
 .navbar-add-button {
     color: white;
     text-decoration: none;
-    background-color: #cc8400; /* Darker orange */
+    background-color: #cc8400; 
     padding: 8px 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .navbar-add-button:hover {
-    background-color: #995f00; /* Even darker orange */
+    background-color: #995f00;
 }

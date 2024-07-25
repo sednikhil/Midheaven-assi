@@ -1,10 +1,8 @@
-/* src/pages/Home.css */
-
 .astrologer-cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Added gap between cards */
+    gap: 20px; 
 }
 
 .pagination {

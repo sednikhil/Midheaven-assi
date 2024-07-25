@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getAstrologerById, updateAstrologer } from '../api';
 import { useParams, useNavigate } from 'react-router-dom';
-//import './UpdateAstrologer.css'; // Ensure CSS is imported
 import '../pages/UpdateAstrologer.css';
 
 const UpdateAstrologer = () => {

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getAstrologerById, deleteAstrologer } from '../api';
-//import './astrologerdetails.css'; // Add your CSS for styling
 import '../pages/AstrologerDetails.css';
 
 const AstrologerDetails = () => {

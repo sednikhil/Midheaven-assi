@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-//import './Navbar.css'; // Add your CSS for styling
 import '../pages/Navbar.css';
 
 const Navbar = ({ onFilterClick }) => {
