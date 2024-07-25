@@ -7,8 +7,7 @@ import UpdateAstrologer from './components/UpdateAstrologer';
 
 const App = () => {
   return (
-    <Routes>
-     
+    <Routes>     
       <Route path="/" element={<Home />} />
       <Route path="/astrologer/:id" element={<AstrologerDetail />} />
       <Route path="/create" element={<CreateAstrologer />} />

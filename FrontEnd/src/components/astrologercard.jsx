@@ -16,7 +16,7 @@ const AstrologerCard = ({ astrologer }) => {
                     <p className="astrologer-card-expertise">Expertise: {astrologer.expertise}</p>
                     <p className="astrologer-card-experience">Experience: {astrologer.experience} years</p>
                     <p className="astrologer-card-rating">Rating: {astrologer.rating}</p>
-                    <p className="astrologer-card-charges">Charges: ${astrologer.charges}</p>
+                    <p className="astrologer-card-charges">Charges: Rs {astrologer.charges}</p>
                     <p className="astrologer-card-language">Languages: {astrologer.language}</p>
                 </div>
             </Link>
