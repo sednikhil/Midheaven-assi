@@ -44,7 +44,7 @@ router.get('/:id', getAstrologer, (req, res) => {
 });
 
 // Create an astrologer
-router.post('/add', upload.single('image'), async (req, res) => {
+router.post('/', upload.single('image'), async (req, res) => {
     const newAstrologer = {
         name: req.body.name,
         expertise: req.body.expertise,
