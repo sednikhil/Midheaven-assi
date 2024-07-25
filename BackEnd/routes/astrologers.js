@@ -17,6 +17,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Get all astrologers
+// Get all astrologers with filtering and pagination
 router.get('/', async (req, res) => {
     try {
         const filters = {};
@@ -31,12 +32,21 @@ router.get('/', async (req, res) => {
             filters.experience = parseInt(req.query.experience);
         }
 
-        const astrologers = await Astrologer.find(filters);
-        res.json(astrologers);
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 5;
+        const skip = (page - 1) * limit;
+
+        const total = await Astrologer.countDocuments(filters);
+        const pages = Math.ceil(total / limit);
+
+        const astrologers = await Astrologer.find(filters).skip(skip).limit(limit);
+
+        res.json({ astrologers, total, page, pages });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
 });
+
 
 // Get one astrologer
 router.get('/:id', getAstrologer, (req, res) => {

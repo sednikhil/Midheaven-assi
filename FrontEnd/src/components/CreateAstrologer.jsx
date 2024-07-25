@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createAstrologer } from '../api';
 import { useNavigate } from 'react-router-dom';
+import './CreateAstrologer.css'; // Import your CSS file
 
 const CreateAstrologer = () => {
     const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ const CreateAstrologer = () => {
     };
 
     return (
-        <div>
+        <div className="create-astrologer">
             <h1>Create Astrologer</h1>
             <form onSubmit={handleSubmit}>
                 <input name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />

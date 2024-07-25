@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAstrologerById, updateAstrologer } from '../api';
 import { useParams, useNavigate } from 'react-router-dom';
+import './UpdateAstrologer.css'; // Ensure CSS is imported
 
 const UpdateAstrologer = () => {
     const [formData, setFormData] = useState({
@@ -54,7 +55,7 @@ const UpdateAstrologer = () => {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
         const data = new FormData();
         for (let key in formData) {
             data.append(key, formData[key]);
@@ -69,18 +70,18 @@ const UpdateAstrologer = () => {
     };
 
     return (
-        <div>
+        <div className="update-astrologer">
             <h1>Update Astrologer</h1>
             <form onSubmit={handleSubmit}>
-                <input name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
-                <input name="expertise" placeholder="Expertise" value={formData.expertise} onChange={handleChange} required />
-                <input name="experience" placeholder="Experience" value={formData.experience} onChange={handleChange} required />
-                <input name="rating" placeholder="Rating" value={formData.rating} onChange={handleChange} required />
-                <input name="description" placeholder="Description" value={formData.description} onChange={handleChange} required />
-                <input name="charges" placeholder="Charges" value={formData.charges} onChange={handleChange} required />
-                <input name="language" placeholder="Language (comma separated)" value={formData.language} onChange={handleChange} required />
-                <input type="file" name="image" onChange={handleFileChange} />
-                <button type="submit">Update</button>
+                <input className="form-input" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
+                <input className="form-input" name="expertise" placeholder="Expertise" value={formData.expertise} onChange={handleChange} required />
+                <input className="form-input" name="experience" placeholder="Experience" value={formData.experience} onChange={handleChange} required />
+                <input className="form-input" name="rating" placeholder="Rating" value={formData.rating} onChange={handleChange} required />
+                <input className="form-input" name="description" placeholder="Description" value={formData.description} onChange={handleChange} required />
+                <input className="form-input" name="charges" placeholder="Charges" value={formData.charges} onChange={handleChange} required />
+                <input className="form-input" name="language" placeholder="Language (comma separated)" value={formData.language} onChange={handleChange} required />
+                <input className="form-file" type="file" name="image" onChange={handleFileChange} />
+                <button className="submit-button" type="submit">Update</button>
             </form>
         </div>
     );

@@ -1,0 +1,47 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffa500; /* Light orange background */
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-filter-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-filter-button i {
+    margin-right: 8px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-add-button {
+    color: white;
+    text-decoration: none;
+    background-color: #cc8400; /* Darker orange */
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-add-button:hover {
+    background-color: #995f00; /* Even darker orange */
+}

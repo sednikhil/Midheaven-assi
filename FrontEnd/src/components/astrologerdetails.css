@@ -1,0 +1,106 @@
+/* src/pages/AstrologerDetails.css */
+
+.astrologer-details-container {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa07a; /* Light orange color */
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.navbar button,
+.navbar a {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-home-button {
+    font-weight: bold;
+}
+
+.navbar-edit-button {
+    background-color: #4caf50; /* Green for edit button */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar-delete-button {
+    background-color: #f44336; /* Red for delete button */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.astrologer-details-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.astrologer-details-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.astrologer-details-image {
+    width: 300px; /* Increase image width */
+    height: 300px; /* Increase image height */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Add a border around the image */
+}
+
+.astrologer-details-content {
+    flex: 2;
+    text-align: left;
+}
+
+.astrologer-details-name {
+    font-size: 2.5rem; /* Increase the font size */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Add line below name */
+    padding-bottom: 10px;
+}
+
+.astrologer-details-expertise,
+.astrologer-details-experience,
+.astrologer-details-rating,
+.astrologer-details-charges,
+.astrologer-details-language,
+.astrologer-details-description {
+    margin: 10px 0;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #ddd; /* Add line below each section */
+    padding-bottom: 10px;
+}
+
+.show-more-button {
+    background-color: #007bff; /* Blue for show more button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
