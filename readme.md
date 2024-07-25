@@ -1,7 +1,5 @@
 # Astrologer Management Platform
 
-![Astrologer Management](assets/intro_vid.mp4)
-
 This project is a full-stack web application for managing astrologers. It allows users to create, update, view, and delete astrologer profiles. The home page features pagination and filtering capabilities for efficient browsing and searching.
 
 ## Features
@@ -11,6 +9,23 @@ This project is a full-stack web application for managing astrologers. It allows
 - **CRUD Operations**: Create, read, update, and delete astrologer profiles.
 - **Image Upload**: Upload and update astrologer profile images.
 - **Responsive Design**: User-friendly interface for both desktop and mobile devices.
+
+## Screenshots
+
+### Home Page
+![Home Page](assets/5.jpeg)
+
+### Filter Search
+![Filter Search](assets/1.jpeg)
+
+### Astrologer Details
+![Astrologer Details](assets/3.jpeg)
+
+### Create Astrologer
+![Create Astrologer](assets/4.jpeg)
+
+### Update Astrologer
+![Update Astrologer](assets/6.jpeg)
 
 ## Technologies Used
 
@@ -45,7 +60,15 @@ This project is a full-stack web application for managing astrologers. It allows
     npm install
     ```
 
-3. **Run the application:**
+3. **Set up environment variables:**
+
+    Create a `.env` file in the `server` directory and add your MongoDB URI:
+
+    ```
+    MONGODB_URI=your_mongodb_connection_string
+    ```
+
+4. **Run the application:**
 
     Open two terminal windows.
 
@@ -53,7 +76,7 @@ This project is a full-stack web application for managing astrologers. It allows
 
     ```bash
     cd server
-    nodemon index.js
+    npm start
     ```
 
     In the second terminal, start the client:
